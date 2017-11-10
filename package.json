@@ -6,7 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/craig-corcoran/node-request-errors.git"
+  },
   "keywords": [],
   "author": "craig-corcoran",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/craig-corcoran/node-request-errors/issues"
+  },
+  "homepage": "https://github.com/craig-corcoran/node-request-errors#readme"
 }
