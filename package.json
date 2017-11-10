@@ -1,6 +1,6 @@
 {
   "name": "request-errors",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "classes and functions for returning errors from node/express requests",
   "main": "errors.js",
   "scripts": {
