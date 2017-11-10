@@ -3,7 +3,7 @@ function catchReqErrorSync(fn) {
     try {
       return fn(req, res, next);
     } catch (err) {
-      return requestErrorHandler(err, req, res);
+      return reqErrorHandler(err, req, res);
     }
   };
 }
@@ -11,12 +11,12 @@ function catchReqErrorSync(fn) {
 
 function catchReqError(fn) {
   return function (req, res, next) {
-    fn(req, res, next).catch(err => requestErrorHandler(err, req, res));
+    fn(req, res, next).catch(err => reqErrorHandler(err, req, res));
   };
 }
 
 
-function requestErrorHandler(err, req, res) {
+function reqErrorHandler(err, req, res) {
   const error = flattenProps(err);
   if (Object.keys(knownErrors).includes(error.name)) {
     console.log('known error: ', error);
@@ -90,7 +90,7 @@ const knownErrors = {
 module.exports = {
   ...knownErrors,
   knownErrors,
-  requestErrorHandler,
+  reqErrorHandler,
   catchReqErrorSync,
   catchReqError,
   notFound,
