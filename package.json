@@ -1,0 +1,12 @@
+{
+  "name": "request-errors",
+  "version": "1.0.0",
+  "description": "classes and functions for returning errors from node/express requests",
+  "main": "errors.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "craig-corcoran",
+  "license": "ISC"
+}
